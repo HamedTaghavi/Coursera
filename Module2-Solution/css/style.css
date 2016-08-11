@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.row{
+    display: table;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    display: block;
+    float: left;
+    width: 32%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: -2px -2px 5px #888;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin: 0 2% 10px 0;
+    border-collapse: collapse;
+}
+
+.box.rbox {
+    margin-right: 0;
+}
+
+.boxtitle{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right:0;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid black;
+    border-radius: 0 8px 0 8px;
+}
+
+/*---------------Color Box & Titles---------------*/
+.ltitle{
+    background-color: #ffbc67;
+}
+.lbox{
+    background-color: #ffe631;
+}
+.mtitle{
+    background-color: #b7ee37;
+}
+.mbox{
+    background-color: #4bde37;
+}
+.rtitle{
+    background-color: #23dcf1;
+}
+.rbox{
+    background-color: #4ebcff;
+}
+
+
+/*----------------------Desktop----------------------*/
+@media (min-width: 992px) {
+    
+}
+
+/*----------------------Tablet----------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .box{
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .box.mbox {
+        margin-right: 0;
+    }
+
+    .box.rbox {
+        width: 100%;
+    }
+}
+
+/*----------------------Mobile----------------------*/
+@media (max-width: 767px) {
+    .box{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+}
